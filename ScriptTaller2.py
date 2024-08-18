@@ -20,3 +20,15 @@ plt.show()
 
 print(bins)
 print(count)
+
+from scipy.stats import norm
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Normal (mu=0, sigma=1)
+x=np.arange(-4,4-0.001)
+plt.plot(x, norm.pdf(x))
+plt.title("Densidad normal estadandar")
+plt.xlabel("valores")
+plt.ylabel("densidad")
+plt.show()
