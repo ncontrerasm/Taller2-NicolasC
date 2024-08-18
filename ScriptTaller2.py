@@ -10,3 +10,13 @@ import pandas as pd
 
 df = pd.DataFrame(vals)
 print(df.describe())
+
+import matplotlib.pyplot as plt
+count, bins, ignored = plt.hist(x=vals, bins=30)
+plt.title('Histograma de tiempos de servicio')
+plt.xlabel('Tiempos de servicio')
+plt.ylabel('Frecuencia')
+plt.show()
+
+print(bins)
+print(count)
